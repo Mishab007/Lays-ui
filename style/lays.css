@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap ;
+}
+
+.container {
+    height: 1950px;
+    width: 1950px;
+    background-image: url(/Assets/back.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.nav-bar {
+    height: 100px;
+    width: 100vw;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+}
+.nav-bar:hover {
+    background-color: rgba(0, 0, 0, 0.308);
+    
+}
+
+.nav-bar .logo-space {
+    height: 100px;
+    width: 300px;
+    display: grid;
+    place-items: center;
+    
+}
+
+.nav-bar .logo-space img {
+    height: 80px;
+}
+
+.top-buttons {
+    height: 100px;
+    width: 700px;
+    background: transparent;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    place-items: center
+}
+
+.top-buttons .btn {
+    border: 1px solid transparent;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: .3s ease-in-out;
+    color: aliceblue;
+}
+
+.btn:hover {
+    background-color: transparent;
+    font-size: 35px;
+}
+
+.top-icons {
+    height: 100px;
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: end;
+}
+
+.top-icons .icon {
+    height: 40px;
+    align-items: end;
+    transition: 2s;
+    border: 1px solid transparent;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: aliceblue;
+    transition: .3s ease-in-out;
+}
+
+.icon:hover {
+    background-color: transparent;
+    height: 60px;
+}
+
+/* --------------------------------------------------------------------------- */
+
+.middle-content {
+    height: 100vh;
+    width: 100vw;
+    background: rgb(189, 189, 21);
+}
+
+
+.potato {
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    top: 200px;
+    left: 100px;
+}
+
+.text {
+    height: 600px;
+    width: 900px;
+    background: transparent;
+    position: absolute;
+    top: 260px;
+    left: 240px;
+}
+
+.text .header-text {
+    font-size: 80px;
+    font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    color: rgb(27, 24, 24);
+}
+
+.text .description {
+    margin-top: 40px;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    color: rgb(27, 24, 24);
+}
+
+.place-order {
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 20px;
+    margin-top: 20px;
+    background: rgb(214, 122, 18);
+    border: 2px solid transparent;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: .3s;
+}
+
+.place-order:hover {
+    font-size: 30px;
+}
+.lays {
+    height: 250px;
+    width: 400px;
+    position: absolute;
+    right: 230px;
+    top: 300px;
+}
+.lays-1 {
+    height: 650px;
+    width: 500px;
+    position: absolute;
+    right: 230px;
+    top: 180px;
+    animation: lays 15s ease-in-out infinite alternate;
+}
+.lays-2 {
+    height: 650px;
+    width: 500px;
+    position: absolute;
+    right: 230px;
+    top: 180px;
+    animation: lays-2 15s ease-in-out 5s infinite alternate;
+}
+.lays-3 {
+    height: 650px;
+    width: 500px;
+    position: absolute;
+    right: 230px;
+    top: 180px;
+    animation: lays-3 15s ease-in-out 10s infinite alternate;
+}
+.lays-4 {
+    height: 650px;
+    width: 700px;
+    position: absolute;
+    right: 120px;
+    top: 180px;
+    animation: lays-4 15s ease-in-out 15s infinite alternate;
+}
+
+@keyframes lays {
+    0%{ 
+        transform: translateX(0px);
+    }
+    
+    100%{ 
+        transform: translateX(-400px)  scale(.2) translateY(600px);
+        
+    }
+}
+
+@keyframes lays-2 {
+    0%{ 
+        transform: translateX(0px);
+    }
+    
+    100%{ 
+        transform: translateX(400px)  scale(.2) translateY(-600px);
+        
+    }
+}
+
+@keyframes lays-3 {
+    0%{ 
+        transform: translateX(0px);
+    }
+    
+    100%{ 
+        transform: translateX(-400px)  scale(.2) translateY(-600px);
+        
+    }
+}
+
+@keyframes lays-4 {
+    0%{ 
+        transform: translateX(0px);
+    }
+    
+    100%{ 
+        transform: translateX(400px)  scale(.2) translateY(600px);
+        
+    }
+}
+
+.bottom-content {
+    height: 100vhpx;
+    width: 100vw;
+    background: rgb(189, 189, 21);
+}
